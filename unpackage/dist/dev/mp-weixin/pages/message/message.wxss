@@ -1,0 +1,155 @@
+
+.message-container {
+  min-height: 100vh;
+  background: #f8f8f8;
+  padding-bottom: 100rpx;
+}
+
+/* 类型切换 */
+.type-tabs {
+  display: flex;
+  background: #fff;
+  padding: 20rpx 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.tab-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+.tab-name {
+  font-size: 28rpx;
+  color: #666;
+  padding: 10rpx 0;
+}
+.tab-active .tab-name {
+  color: #1890ff;
+  font-weight: bold;
+}
+.tab-active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10rpx;
+  transform: translateX(-50%);
+  width: 40rpx;
+  height: 4rpx;
+  background: #1890ff;
+  border-radius: 2rpx;
+}
+.unread-badge {
+  position: absolute;
+  top: -10rpx;
+  right: 50%;
+  transform: translateX(20rpx);
+  background: #ff4d4f;
+  color: #fff;
+  font-size: 24rpx;
+  padding: 0 8rpx;
+  border-radius: 20rpx;
+  min-width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+}
+
+/* 消息列表 */
+.message-list {
+  height: calc(100vh - 88rpx - 100rpx);
+}
+.message-item {
+  display: flex;
+  padding: 30rpx;
+  background: #fff;
+  margin-bottom: 2rpx;
+}
+.msg-unread {
+  background: #f6f6f6;
+}
+.msg-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+.msg-icon.order {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+.msg-icon.approval {
+  background: #fff7e6;
+  color: #faad14;
+}
+.msg-icon.notice {
+  background: #f6ffed;
+  color: #52c41a;
+}
+.icon {
+  font-size: 40rpx;
+}
+.msg-content {
+  flex: 1;
+}
+.msg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+.msg-title {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+.msg-time {
+  font-size: 24rpx;
+  color: #999;
+}
+.msg-desc {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* 加载更多 */
+.loading-more {
+  text-align: center;
+  padding: 30rpx;
+  color: #999;
+  font-size: 24rpx;
+}
+
+/* 空状态 */
+.empty-tip {
+  text-align: center;
+  padding: 100rpx 0;
+  color: #999;
+  font-size: 28rpx;
+}
+
+/* 底部操作栏 */
+.action-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 20rpx;
+  box-shadow: 0 -2rpx 10rpx rgba(0,0,0,0.05);
+}
+.action-btn {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #1890ff;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 40rpx;
+  margin: 0;
+}

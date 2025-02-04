@@ -1,0 +1,217 @@
+
+.admin-container {
+  min-height: 100vh;
+  background: #f8f8f8;
+  padding: 20rpx;
+}
+
+/* 快捷操作 */
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rpx;
+  margin-bottom: 30rpx;
+}
+.action-item {
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+}
+.action-icon {
+  font-size: 40rpx;
+  margin-right: 20rpx;
+}
+.action-info {
+  flex: 1;
+}
+.action-name {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+.action-desc {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 数据概览 */
+.data-overview {
+  margin-bottom: 30rpx;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.section-title {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+.refresh-btn {
+  font-size: 28rpx;
+  color: #1890ff;
+}
+.chart-card {
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.card-title {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+}
+.more-btn {
+  font-size: 24rpx;
+  color: #666;
+}
+.chart-container {
+  height: 300rpx;
+}
+
+/* 待办事项 */
+.todo-section {
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 20rpx;
+  margin-bottom: 30rpx;
+}
+.count-badge {
+  background: #1890ff;
+  color: #fff;
+  font-size: 24rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 20rpx;
+}
+.todo-list {
+  margin-top: 20rpx;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.todo-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.todo-tag {
+  font-size: 24rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 4rpx;
+  margin-right: 12rpx;
+}
+.todo-tag.warning {
+  background: #fff7e6;
+  color: #faad14;
+}
+.todo-tag.info {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+.todo-text {
+  font-size: 28rpx;
+  color: #333;
+}
+.todo-time {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 功能模块 */
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+}
+.module-item {
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 12rpx;
+}
+.module-icon {
+  font-size: 48rpx;
+  margin-bottom: 16rpx;
+  display: block;
+}
+.module-name {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 8rpx;
+  display: block;
+}
+.module-desc {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 权限弹窗 */
+.auth-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  width: 600rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 40rpx;
+}
+.modal-title {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.auth-input {
+  height: 80rpx;
+  background: #f8f8f8;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  margin-bottom: 30rpx;
+}
+.modal-btns {
+  display: flex;
+  gap: 20rpx;
+}
+.cancel-btn, .confirm-btn {
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+}
+.cancel-btn {
+  background: #f5f5f5;
+  color: #666;
+}
+.confirm-btn {
+  background: #1890ff;
+  color: #fff;
+}

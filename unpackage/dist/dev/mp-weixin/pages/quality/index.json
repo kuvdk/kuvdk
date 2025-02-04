@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "品控部门",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "pd-toast": "../../components/pd-toast/pd-toast",
+    "pd-loading": "../../components/pd-loading/pd-loading"
+  }
+}

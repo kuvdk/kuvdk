@@ -1,0 +1,124 @@
+
+.activity-chart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 饼图 */
+.pie-chart {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+.pie-segment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform-origin: 100% 50%;
+}
+.pie-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120rpx;
+  height: 120rpx;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.total-text {
+  font-size: 20rpx;
+  color: #999;
+}
+.total-value {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 图例 */
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20rpx;
+  margin: 20rpx 0;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}
+.legend-color {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 4rpx;
+}
+.legend-text {
+  font-size: 24rpx;
+  color: #666;
+}
+.legend-value {
+  font-size: 24rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 时段图表 */
+.timeline-chart {
+  flex: 1;
+  padding: 20rpx 0;
+}
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+  padding: 0 20rpx;
+}
+.timeline-header text {
+  font-size: 24rpx;
+  color: #666;
+}
+.peak-time {
+  color: #ff4d4f;
+}
+.timeline-bars {
+  height: 200rpx;
+  display: flex;
+  align-items: flex-end;
+  gap: 4rpx;
+  padding: 0 20rpx;
+}
+.time-bar {
+  flex: 1;
+  min-height: 20rpx;
+  background: #1890ff;
+  position: relative;
+  transition: height 0.3s;
+}
+.bar-value {
+  position: absolute;
+  top: -30rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20rpx;
+  color: #666;
+}
+.timeline-labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 20rpx 0;
+}
+.time-label {
+  font-size: 20rpx;
+  color: #999;
+}

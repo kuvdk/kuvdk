@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/message/message",
+    "pages/user/user"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/supplier",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "pages/production",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "pages/quality",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "pages/admin",
+      "pages": [
+        "index"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "static/message.png",
+        "selectedIconPath": "static/message-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/user.png",
+        "selectedIconPath": "static/user-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

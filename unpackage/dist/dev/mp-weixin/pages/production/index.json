@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "生产部门",
+  "usingComponents": {
+    "pd-toast": "../../components/pd-toast/pd-toast",
+    "pd-loading": "../../components/pd-loading/pd-loading"
+  }
+}

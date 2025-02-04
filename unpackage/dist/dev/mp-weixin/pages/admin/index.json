@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "管理后台",
+  "usingComponents": {
+    "pd-toast": "../../components/pd-toast/pd-toast",
+    "storage-chart": "./components/storage-chart",
+    "user-activity-chart": "./components/user-activity-chart"
+  }
+}

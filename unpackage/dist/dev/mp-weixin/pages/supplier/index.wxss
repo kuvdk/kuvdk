@@ -1,0 +1,209 @@
+
+.supplier-container {
+  min-height: 100vh;
+  background: #f8f8f8;
+  padding-bottom: 120rpx;
+}
+
+/* 头部样式 */
+.header {
+  position: relative;
+  padding: 20rpx;
+}
+.scan-btn {
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+}
+.scan-icon {
+  font-size: 40rpx;
+}
+.stats-card {
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stats-label {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+.stats-value {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 表单样式 */
+.form-section {
+  background: #fff;
+  margin: 20rpx;
+  padding: 30rpx;
+  border-radius: 12rpx;
+}
+.form-item {
+  margin-bottom: 30rpx;
+}
+.label {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 16rpx;
+  display: block;
+}
+.required {
+  color: #ff4d4f;
+  margin-right: 4rpx;
+}
+.input-wrap {
+  position: relative;
+}
+.input {
+  height: 80rpx;
+  background: #f8f8f8;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+.history-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 8rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+  z-index: 100;
+}
+.history-item {
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.item-name {
+  font-size: 28rpx;
+  color: #333;
+}
+.item-price {
+  font-size: 24rpx;
+  color: #666;
+}
+.stepper {
+  display: flex;
+  align-items: center;
+}
+.step-btn {
+  width: 60rpx;
+  height: 60rpx;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  color: #666;
+}
+.step-input {
+  width: 120rpx;
+  height: 60rpx;
+  background: #f8f8f8;
+  margin: 0 20rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.price-input-wrap {
+  position: relative;
+}
+.price-warning {
+  border: 2rpx solid #ff4d4f;
+}
+.price-tips {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  padding: 10rpx 20rpx;
+  border-radius: 8rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+}
+.tip-item {
+  font-size: 24rpx;
+  color: #666;
+  display: block;
+}
+.total-section {
+  margin-top: 40rpx;
+  padding-top: 30rpx;
+  border-top: 1rpx solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-label {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+.total-value {
+  font-size: 40rpx;
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+/* 底部导航 */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -2rpx 10rpx rgba(0,0,0,0.05);
+}
+.submit-btn {
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #3cc51f;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 40rpx;
+  margin: 0;
+  margin-right: 20rpx;
+}
+.history-link {
+  font-size: 28rpx;
+  color: #666;
+  padding: 20rpx;
+}
+
+/* 离线提示 */
+.offline-tip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fffbe6;
+  padding: 10rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #faad14;
+}

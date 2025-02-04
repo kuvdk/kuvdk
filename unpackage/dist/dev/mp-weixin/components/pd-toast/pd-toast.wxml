@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="{{['pd-toast', f]}}"><text class="toast-icon">{{b}}</text><text class="toast-text">{{c}}</text><text wx:if="{{d}}" class="close-btn" bindtap="{{e}}">×</text></view>

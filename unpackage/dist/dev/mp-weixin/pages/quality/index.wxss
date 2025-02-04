@@ -1,0 +1,313 @@
+
+.quality-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 20rpx;
+}
+
+/* 统计卡片 */
+.stats-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.stat-card {
+  flex: 1;
+  margin: 0 10rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 20rpx;
+  text-align: center;
+}
+.stat-value {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+.stat-label {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 8rpx;
+}
+
+/* 订单列表 */
+.order-list {
+  background: #fff;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.title {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+.filter-btns {
+  display: flex;
+  gap: 20rpx;
+}
+.filter-btn {
+  font-size: 28rpx;
+  color: #666;
+  padding: 8rpx 20rpx;
+  border-radius: 24rpx;
+}
+.filter-btn.active {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+
+/* 列表内容 */
+.list-content {
+  height: calc(100vh - 300rpx);
+}
+.order-item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+.product-code {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+.urgent-tag {
+  font-size: 24rpx;
+  color: #ff4d4f;
+  background: #fff1f0;
+  padding: 4rpx 12rpx;
+  border-radius: 4rpx;
+}
+.order-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+  margin-bottom: 16rpx;
+}
+.info-item {
+  font-size: 28rpx;
+  color: #666;
+}
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time {
+  font-size: 24rpx;
+  color: #999;
+}
+.dept {
+  font-size: 24rpx;
+  color: #1890ff;
+  background: #e6f7ff;
+  padding: 4rpx 12rpx;
+  border-radius: 4rpx;
+}
+
+/* 加载更多 */
+.loading-more {
+  text-align: center;
+  padding: 30rpx;
+  color: #999;
+  font-size: 24rpx;
+}
+
+/* 空状态 */
+.empty-tip {
+  padding: 100rpx 0;
+  text-align: center;
+}
+.empty-tip image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-bottom: 20rpx;
+}
+.empty-tip text {
+  font-size: 28rpx;
+  color: #999;
+}
+
+/* 审批弹窗 */
+.approval-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  width: 90%;
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 30rpx;
+  overflow-y: auto;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.modal-title {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+.close-btn {
+  font-size: 40rpx;
+  color: #999;
+  padding: 10rpx;
+}
+
+/* 图片预览 */
+.image-preview {
+  white-space: nowrap;
+  margin-bottom: 30rpx;
+}
+.preview-img {
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+  border-radius: 8rpx;
+  display: inline-block;
+}
+
+/* 工艺参数 */
+.params-info {
+  display: flex;
+  gap: 40rpx;
+  margin-bottom: 30rpx;
+}
+.param-item {
+  flex: 1;
+  background: #f8f8f8;
+  padding: 20rpx;
+  border-radius: 8rpx;
+}
+.param-label {
+  font-size: 24rpx;
+  color: #666;
+}
+.param-value {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+  margin-top: 8rpx;
+  display: block;
+}
+
+/* 审核结果 */
+.result-section {
+  margin-bottom: 30rpx;
+}
+.result-group {
+  display: flex;
+  gap: 40rpx;
+}
+.result-option {
+  font-size: 28rpx;
+  color: #333;
+}
+
+/* 合格数量 */
+.quantity-input {
+  margin-bottom: 30rpx;
+}
+.input-label {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 12rpx;
+  display: block;
+}
+.stepper {
+  display: flex;
+  align-items: center;
+  width: 240rpx;
+}
+.step-btn {
+  width: 60rpx;
+  height: 60rpx;
+  background: #f8f8f8;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+}
+.step-input {
+  flex: 1;
+  height: 60rpx;
+  background: #f8f8f8;
+  margin: 0 20rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.total-quantity {
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+}
+
+/* 退回原因 */
+.reject-reason {
+  margin-bottom: 30rpx;
+}
+.reason-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+  margin-bottom: 20rpx;
+}
+.reason-tag {
+  background: #f8f8f8;
+  color: #666;
+  font-size: 28rpx;
+  padding: 12rpx 24rpx;
+  border-radius: 8rpx;
+}
+.tag-selected {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+.reason-input {
+  width: 100%;
+  height: 160rpx;
+  background: #f8f8f8;
+  border-radius: 8rpx;
+  padding: 20rpx;
+  font-size: 28rpx;
+}
+
+/* 提交按钮 */
+.submit-btn {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #1890ff;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 40rpx;
+  margin: 0;
+}
+.submit-btn[disabled] {
+  opacity: 0.5;
+}
