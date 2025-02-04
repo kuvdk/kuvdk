@@ -1,0 +1,115 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "平德管理系统",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息中心"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pages/supplier",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "供应商门户"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/production",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "生产部门"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/quality",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "品控部门",
+						"enablePullDownRefresh": true
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/admin",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "管理后台"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "平德管理系统",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#1890ff",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/home.png",
+				"selectedIconPath": "static/home-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/message.png",
+				"selectedIconPath": "static/message-active.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/user.png",
+				"selectedIconPath": "static/user-active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^pd-(.*)": "@/components/pd-$1/pd-$1.vue"
+		}
+	}
+}
